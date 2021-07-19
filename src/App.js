@@ -54,7 +54,7 @@ function validateForm()
 }
 function submitForm()
 {
-  if(document.getElementById("btn").innerHTML=="CALCULATE")
+  if(document.getElementById("btn").innerHTML==="CALCULATE")
   {
     if(document.getElementById("amount").value!=="" && document.getElementById("tenure").value!=="" && document.getElementById("interest-rate").value!=="")
     {
@@ -92,8 +92,8 @@ function calculateEmi()
   let e= p*r*(comp/(comp-1))
 
   document.getElementById("loan-emi").innerHTML=Math.round(e).toLocaleString('hi');
-  document.getElementById("interest-payable").innerHTML=Math.round(e*48-p).toLocaleString('hi');
-  document.getElementById("total-payment").innerHTML=Math.round(e*48).toLocaleString('hi');
+  document.getElementById("interest-payable").innerHTML=Math.round(e*n-p).toLocaleString('hi');
+  document.getElementById("total-payment").innerHTML=Math.round(e*n).toLocaleString('hi');
   document.getElementById("emi-output").style["display"]="block";
   
   //alert(e);
