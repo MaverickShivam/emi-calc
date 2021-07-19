@@ -23,7 +23,7 @@ table tr td {
 
 input {
   padding: 7px 5px;
-  border: 0.1px solid #b2b1b9;
+  border: 0.1px solid gray;
   border-radius: 5px;
   outline: none;
 }
@@ -40,6 +40,7 @@ input {
 .emi-output {
   border-top: 1px solid gray;
   margin-top: 30px;
+  display: none;
 }
 .small-heading {
   margin-top: 20px;
