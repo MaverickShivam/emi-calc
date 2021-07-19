@@ -111,20 +111,20 @@ function App() {
               <tbody>
               <tr>
                 <td>Loan Amount</td>
-                <td><input type="number" onInput={validateForm} id="amount"/></td>
+                <td><input type="number" onInput={validateForm} placeholder="Enter Amount" id="amount"/></td>
                 <td>INR</td>
               </tr></tbody>
 
               <tbody>
               <tr>
                 <td>Loan Tenure</td>
-                <td><input type="number" onInput={validateForm} id="tenure"/></td>
+                <td><input type="number" onInput={validateForm} placeholder="Enter months" id="tenure"/></td>
                 <td>Months</td>
               </tr></tbody>
               <tbody>
               <tr>
                 <td>Interest Rate</td>
-                <td><input type="number" onInput={validateForm} id="interest-rate"/></td>
+                <td><input type="number" onInput={validateForm} placeholder="NN.NN" id="interest-rate"/></td>
                 <td>%</td>
               </tr></tbody>
             </table>
